@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
-import Text1 from './components/Text1';
+import Navbar from './components/Navbar';
 
-function App() {
-  return (
-    <Text1 />
-  );
-}
+class App extends Component {
+  render() {
+    return <Navbar />;
+  }
+};
 
 export default App;
