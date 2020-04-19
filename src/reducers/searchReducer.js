@@ -2,22 +2,22 @@ import {SEARCH_MOVIE} from '../actions/types';
 
 //need to create here initial state
 
-const initialStates = {
-    text = '',
-    movies : [],
+const initialState = {
+    text:'',
+    movies: [],
     loading: false,
     movie: []
-}
+};
 
-export default function(state = initialStates, action) {
+export default function(state = initialState, action) {
     switch (action.type) {
         case SEARCH_MOVIE:
             return{
                 ...state,
                 text: action.payload,
                 loading: false
-            }
+            };
             default:
-        return state
+                return state;
     }
 }
