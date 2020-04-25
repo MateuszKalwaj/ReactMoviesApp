@@ -5,9 +5,11 @@ import './App.css';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Landing from './components/home/Landing';
+import Movie from './components/home/Movie';
 
 import store from './store';
-import {HashRouter as Router } from 'react-router-dom';
+import {HashRouter as Router, Route } from 'react-router-dom';
+
 
 class App extends Component {
   render() {
@@ -15,9 +17,10 @@ class App extends Component {
       <Provider store={store}>
         <Router>
 <div>
-          <Navbar />;
-          <Landing />;
-          <Footer />;
+          <Navbar />
+          <Route exact path="/" component={Landing} />
+          <Route exact path="/movie/:id" component={Movie}/>
+          <Footer /> 
 </div>
         </Router>
       </Provider>

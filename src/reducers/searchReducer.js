@@ -1,4 +1,4 @@
-import {SEARCH_MOVIE, FETCH_MOVIES} from '../actions/types'
+import {SEARCH_MOVIE, FETCH_MOVIES, FETCH_MOVIE} from '../actions/types'
 
 //need to create here initial state
 
@@ -21,6 +21,11 @@ export default function(state = initialState, action) {
             return{
                 ...state,
                 movies: action.payload
+            };
+        case FETCH_MOVIE:
+            return{
+                ...state,
+                 movie: action.payload
             };
             default:
                 return state;
