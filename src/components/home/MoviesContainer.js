@@ -10,7 +10,13 @@ export class MoviesContainer extends Component {
         const {movies} = this.props
 
         let content = ''
-        content = movies.length > 0 ?movies.map((movie, index) => <MovieCard key={index} movie={movie} />) : null;
+
+        content =
+        movies.Response === 'True'
+          ? movies.Search.map((movie, index) => (
+              <MovieCard key={index} movie={movie} />
+            ))
+          : <div><p>Is that really what you are looking for?</p></div>;
 
         return (
             <div className="row">
