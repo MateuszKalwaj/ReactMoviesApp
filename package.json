@@ -2,7 +2,7 @@
   "name": "movies-search-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mateuszkalwaj.github.io/ReactMoviesApp",
+  "homepage": "https://mateuszkalwaj.github.io/react-movies-app",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
