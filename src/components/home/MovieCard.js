@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 export class MovieCard extends Component {
     render() {
@@ -25,6 +26,10 @@ export class MovieCard extends Component {
     
         )
     }
+}
+
+MovieCard.propTypes = {
+  movie: PropTypes.object.isRequired
 }
 
 export default MovieCard
