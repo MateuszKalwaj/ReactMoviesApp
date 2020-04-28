@@ -18,7 +18,7 @@ export class MoviesContainer extends Component {
             ))
           :null;
         return (
-            <div className="row">
+            <div className="row my-4">
                 {content}
             </div>
         )
