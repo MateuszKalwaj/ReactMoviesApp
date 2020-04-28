@@ -16,34 +16,34 @@ export class Movie extends Component {
         const { loading, movie } = this.props;
         
         let movieInfo = ( 
-          <div className="container mt-2">
+          <div className="container">
        <div className="row">
-         <div className="col-md-4 card card-body border border-info">
+         <div className="col-md-4 card card-body">
            <img src={movie.Poster} className="thumbnail" alt="Poster" />
          </div>
          <div className="col-md-8">
            <h2 className="mb-4">{movie.Title}</h2>
            <ul className="list-group">
              <li className="list-group-item">
-               <b>IMDB Rating:</b> {movie.imdbRating}
+               <strong>IMDB Rating:</strong> {movie.imdbRating}
              </li>
              <li className="list-group-item">
-               <b>Runtime:</b> {movie.Runtime}
+               <strong>Genre:</strong> {movie.Genre}
              </li>
              <li className="list-group-item">
-               <b>Released:</b> {movie.Released}
+               <strong>Released:</strong> {movie.Released}
              </li>
              <li className="list-group-item">
-               <b>Rated:</b> {movie.Rated}
+               <strong>Rated:</strong> {movie.Rated}
              </li>
              <li className="list-group-item">
-               <b>Director:</b> {movie.Director}
+               <strong>Director:</strong> {movie.Director}
              </li>
              <li className="list-group-item">
-               <b>Writer:</b> {movie.Writer}
+               <strong>Writer:</strong> {movie.Writer}
              </li>
              <li className="list-group-item">
-               <b>Actors:</b> {movie.Actors}
+               <strong>Actors:</strong> {movie.Actors}
              </li>
            </ul>
          </div>
@@ -53,7 +53,9 @@ export class Movie extends Component {
            <div className="col-md-12">
              <h3>About </h3>
             {movie.Plot}
-
+            <br></br>
+            {movie.Runtime}
+            <br></br>
             <br></br>
             {movie.BoxOffice}
              <hr />

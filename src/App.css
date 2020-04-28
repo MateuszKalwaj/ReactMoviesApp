@@ -11,9 +11,21 @@
 #imdb-logo {
     color:#f5de50;
 }
+.page-footer {
+    background-color: darkgray;
+}
+@media (min-width: 960px) {
+    #movies .col-md-3 .well {
+        height: 390px;
+    }
+
+    #movies .col-md-3 img {
+        height: 240px;
+    }
+}
 
 .background-color {
-background-color: #e9ecef;
+background-color: lightgray;
 }
 .text-color{
     color: black;
